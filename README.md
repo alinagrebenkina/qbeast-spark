@@ -16,7 +16,7 @@
 
 ---
 
-**Qbeast Spark** is an extension for [**Data Lakehouses**](http://cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) that enables **multi-dimensional filtering** and **sampling** directly on the storage
+**Qbeast Spark** is an Apache Spark extension that enhances data processing in [**Data Lakehouses**](http://cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf). It provides advanced **multi-dimensional filtering** and efficient data **sampling** directly on the storage, enabling faster and more accurate queries. The extension also maintains ACID properties for data integrity and reliability, making it ideal for handling large-scale data efficiently.
 
 [![apache-spark](https://img.shields.io/badge/apache--spark-3.5.x-blue)](https://spark.apache.org/releases/spark-release-3-5-0.html) 
 [![apache-hadoop](https://img.shields.io/badge/apache--hadoop-3.3.x-blue)](https://hadoop.apache.org/release/3.3.1.html)
@@ -30,13 +30,13 @@
 1. **Data Lakehouse** - Data lake with **ACID** properties, thanks to the underlying [Delta Lake](https://delta.io/) architecture
 
 
-2. **Multi-column indexing**:  **Filter** your data with **multiple columns** using the Qbeast Format.
+3. **Multi-column indexing**:  **Filter** your data with **multiple columns** using Qbeast Spark.
    
 
-3. **Improved Sampling operator** - **Read** statistically significant **subsets** of files.
+4. **Improved Sampling operator** - **Read** statistically significant **subsets** of files.
    
 
-4. **Table Tolerance** - Model for sampling fraction and **query accuracy** trade-off. 
+5. **Table Tolerance** - Model for sampling fraction and **query accuracy** trade-off. 
 
 
 ## Query example with Qbeast
